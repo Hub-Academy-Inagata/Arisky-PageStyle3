@@ -11045,39 +11045,63 @@ body {
 }
 .banner {
   height: 850px;
-  background-image: url(../images/bnd-ban1.png), url(../images/ban-bnd2.png);
+  background-image: url(../images/tnt-bg1.png), url(../images/tnt-bg2.png), url(../images/tnt-bg3.png);
   background-repeat: no-repeat;
-  background-position: top left, top right;
-  background-size: auto, 40%;
+  background-position: top left, bottom left, top right;
+  background-size: 10%, 15%, 40%;
 }
 .banner .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 100px;
 }
-.banner .container .banner-caption h2, .banner .container .banner-caption .h2 {
+
+.video {
+  padding: 100px 0;
+}
+.video .container .judul {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.video .container .judul h2, .video .container .judul .h2 {
   font-family: "Poppins";
-  font-size: 48px;
+  font-size: 56px;
   line-height: 72px;
   font-weight: 700;
   color: #19245F;
 }
-.banner .container .banner-caption p {
+.video .container .judul p {
   font-family: "Poppins";
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 300;
-  color: #3A3B41;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #19245F;
 }
-.banner .container .banner-caption .btn-banner {
-  background-color: #619AEF;
-  border-radius: 10px;
-  color: #ffffff;
+.video .container .video-btn {
+  border-radius: 24px;
+  border: none;
+}
+.video .container .video-btn img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.modal-body {
+  position: relative;
+  padding: 0px;
 }
 
 .keunggulan {
   padding: 100px 30px 100px 30px;
+  margin-top: 150px;
   background-image: url(../images/bg-bnd.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -11119,28 +11143,28 @@ body {
   color: #3A3B41;
   padding-right: 10px;
 }
-.keunggulan .tentang {
+.keunggulan .profil {
   padding: 50px 0;
 }
-.keunggulan .tentang .container {
+.keunggulan .profil .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.keunggulan .tentang .container .tentang-img img {
-  width: 70%;
+.keunggulan .profil .container .profil-img img {
+  width: 80%;
 }
-.keunggulan .tentang .container .tentang-caption {
+.keunggulan .profil .container .profil-caption {
   margin-left: 50px;
 }
-.keunggulan .tentang .container .tentang-caption h2, .keunggulan .tentang .container .tentang-caption .h2 {
+.keunggulan .profil .container .profil-caption h2, .keunggulan .profil .container .profil-caption .h2 {
   font-family: "Poppins";
   font-size: 56px;
   line-height: 72px;
   font-weight: 700;
   color: #ffffff;
 }
-.keunggulan .tentang .container .tentang-caption p {
+.keunggulan .profil .container .profil-caption p {
   font-family: "Poppins";
   font-size: 16px;
   line-height: 24px;
@@ -11149,137 +11173,74 @@ body {
   color: #ffffff;
 }
 
-.artikel {
-  padding: 100px 0;
+.guru {
+  margin: 100px 0;
 }
-.artikel .container .artikel-caption {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.artikel .container .artikel-caption h2, .artikel .container .artikel-caption .h2 {
-  font-family: "Poppins";
-  font-size: 56px;
-  line-height: 72px;
-  font-weight: 700;
-  color: #19245F;
-}
-.artikel .container .artikel-caption p {
-  font-family: "Poppins";
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 400;
-  color: #19245F;
-}
-.artikel .container .row {
-  margin-top: 20px;
-}
-.artikel .container .row .col {
-  margin: 12px;
-  width: 22rem;
-  border: 2px solid #58C6EF;
-  border-radius: 24px;
-}
-.artikel .container .row .col .carda {
-  padding: 15px;
-}
-.artikel .container .row .col .carda img {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 24px;
-}
-.artikel .container .row .col .carda img:hover {
-  transform: scale(1.1);
-  transition: all ease-in-out 0.3s;
-}
-.artikel .container .row .col .carda .card-body h4, .artikel .container .row .col .carda .card-body .h4 {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-  margin-top: 30px;
-  color: #58C6EF;
-}
-.artikel .container .row .col .carda .card-body h5, .artikel .container .row .col .carda .card-body .h5 {
-  font-family: "Poppins";
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600;
-  color: #19245F;
-  margin-top: 20px;
-}
-.artikel .container .row .col .carda .card-body h5:hover, .artikel .container .row .col .carda .card-body .h5:hover {
-  color: #3871D0;
-  cursor: pointer;
-}
-.artikel .container .row .col .carda .card-body p {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #3A3B41;
-  margin-top: 10px;
-}
-.artikel .container .row .col .carda .card-body h6 a, .artikel .container .row .col .carda .card-body .h6 a {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-  color: #3871D0;
-  text-decoration: none;
-}
-.artikel .container .row .col .carda .card-body h6 a:hover, .artikel .container .row .col .carda .card-body .h6 a:hover {
-  color: #19245F;
-}
-
-.galeri {
-  padding: 100px 0;
-  width: 100%;
-  height: 650px;
-  background-repeat: no-repeat;
-  background-image: url(../images/bnd-galbg.png);
-  background-position: left top;
-  background-size: 40%;
-}
-.galeri .container {
+.guru .container {
   padding: 20px 0;
 }
-.galeri .container h1, .galeri .container .h1 {
+.guru .container h2, .guru .container .h2 {
   font-family: "Poppins";
   font-size: 56px;
   line-height: 72px;
   font-weight: 700;
   color: #19245F;
 }
-.galeri .container .row h2, .galeri .container .row .h2 {
+.guru .container .row h5, .guru .container .row .h5 {
   font-family: "Poppins";
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 36px;
   font-weight: 500;
   color: #19245F;
 }
-.galeri .container .row .btn-galeri {
+.guru .container .row a {
   background-color: #619AEF;
   color: #ffffff;
-  border-radius: 10px;
 }
-.galeri .container .content {
+.guru .container .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 20px;
+  padding: 20px 0;
 }
-.galeri .container .content .card-box {
-  width: 20rem;
-  margin: 20px 30px;
+.guru .container .content .col {
+  margin: 12px;
+  width: 18rem;
+  border: 2px solid #58C6EF;
+  border-radius: 24px;
 }
-.galeri .container .content .card-box img {
+.guru .container .content .col .card-box {
+  margin: 20px;
+}
+.guru .container .content .col .card-box img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   border-radius: 24px;
 }
-.galeri .container .content .card-box img:hover {
+.guru .container .content .col .card-box img:hover {
   transform: scale(1.1);
   transition: all ease-in-out 0.3s;
+}
+.guru .container .content .col .card-box .card-body {
+  margin-top: 30px;
+  text-align: center;
+}
+.guru .container .content .col .card-box .card-body h5, .guru .container .content .col .card-box .card-body .h5 {
+  font-family: "Poppins";
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #19245F;
+}
+.guru .container .content .col .card-box .card-body h5:hover, .guru .container .content .col .card-box .card-body .h5:hover {
+  color: #3871D0;
+  cursor: pointer;
+}
+.guru .container .content .col .card-box .card-body p {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2E334E;
 }
 
 .daftar .container .cardd {
@@ -11411,4 +11372,4 @@ body {
   justify-content: center;
   text-align: center;
   color: #404040;
-}/*# sourceMappingURL=beranda.css.map */
+}/*# sourceMappingURL=tentang.css.map */
