@@ -10959,8 +10959,8 @@ body {
 }
 .navbar .container .navbar-collapse .navbar-nav {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 .navbar .container .navbar-collapse .navbar-nav .nav-item {
   padding: 0 20px;
@@ -11045,301 +11045,122 @@ body {
 }
 .banner {
   height: 850px;
-  background-image: url(../images/bnd-ban1.png), url(../images/ban-bnd2.png);
+  background-image: url(../images/ktk-bg1.png), url(../images/ktk-bg2.png), url(../images/ktk-bg3.png);
+  background-position: top left, bottom left, top right;
   background-repeat: no-repeat;
-  background-position: top left, top right;
-  background-size: auto, 40%;
+  background-size: 10%, 15%, 25%;
 }
 .banner .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 150px;
+  align-items: center;
+  padding-top: 100px;
 }
-.banner .container .banner-caption h2, .banner .container .banner-caption .h2 {
-  font-family: "Poppins";
-  font-size: 48px;
-  line-height: 72px;
-  font-weight: 700;
-  color: #19245F;
-}
-.banner .container .banner-caption p {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 300;
-  color: #3A3B41;
-}
-.banner .container .banner-caption .btn-banner {
-  background-color: #619AEF;
-  border-radius: 10px;
-  color: #ffffff;
-}
-
-.keunggulan {
-  padding: 100px 30px 100px 30px;
-  background-image: url(../images/bg-bnd.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 1172px;
-}
-.keunggulan .container .judul h2, .keunggulan .container .judul .h2 {
+.banner .container h2, .banner .container .h2 {
   font-family: "Poppins";
   font-size: 56px;
   line-height: 72px;
   font-weight: 700;
   color: #19245F;
 }
-.keunggulan .container .isi {
+
+.kontak .container {
+  margin: 100px auto;
+}
+.kontak .container h2, .kontak .container .h2 {
+  font-family: "Poppins";
+  font-size: 56px;
+  line-height: 72px;
+  font-weight: 700;
+  color: #19245F;
+  text-align: center;
+}
+.kontak .container h5, .kontak .container .h5 {
+  font-family: "Poppins";
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #19245F;
+  text-align: center;
+}
+.kontak .container .row {
+  padding-top: 30px;
+}
+.kontak .container .row .detail .telp {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   align-content: center;
-  margin: 50px 0;
+  margin: 30px 0;
 }
-.keunggulan .container .isi .card .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.kontak .container .row .detail .telp .gambar-telp img {
+  width: 60px;
 }
-.keunggulan .container .isi .card img {
-  width: 80px;
-  margin-bottom: 20px;
-}
-.keunggulan .container .isi .card .card-title {
-  font-family: "Poppins";
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 600;
-  color: #1C2661;
-}
-.keunggulan .container .isi .card .card-text {
-  color: #3A3B41;
-  padding-right: 10px;
-}
-.keunggulan .tentang {
-  padding: 50px 0;
-}
-.keunggulan .tentang .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.keunggulan .tentang .container .tentang-img img {
-  width: 70%;
-}
-.keunggulan .tentang .container .tentang-caption {
-  margin-left: 50px;
-}
-.keunggulan .tentang .container .tentang-caption h2, .keunggulan .tentang .container .tentang-caption .h2 {
-  font-family: "Poppins";
-  font-size: 56px;
-  line-height: 72px;
-  font-weight: 700;
-  color: #ffffff;
-}
-.keunggulan .tentang .container .tentang-caption p {
+.kontak .container .row .detail .telp .text-telp p {
   font-family: "Poppins";
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  text-align: justify;
-  color: #ffffff;
+  color: #3A3B41;
+  margin-bottom: 5px;
+  padding-left: 20px;
 }
-
-.artikel {
-  padding: 100px 0;
-}
-.artikel .container .artikel-caption {
-  text-align: center;
+.kontak .container .row .detail .email {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 30px 0;
 }
-.artikel .container .artikel-caption h2, .artikel .container .artikel-caption .h2 {
-  font-family: "Poppins";
-  font-size: 56px;
-  line-height: 72px;
-  font-weight: 700;
-  color: #19245F;
+.kontak .container .row .detail .email .gambar-email img {
+  width: 60px;
 }
-.artikel .container .artikel-caption p {
+.kontak .container .row .detail .email .text-email p {
   font-family: "Poppins";
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
-  color: #19245F;
+  color: #3A3B41;
+  margin-bottom: 5px;
+  padding-left: 20px;
 }
-.artikel .container .row {
-  margin-top: 20px;
+.kontak .container .row .detail .lokasi {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 30px 0;
 }
-.artikel .container .row .col {
-  margin: 12px;
-  width: 22rem;
+.kontak .container .row .detail .lokasi .gambar-lokasi img {
+  width: 60px;
+}
+.kontak .container .row .detail .lokasi .text-lokasi p {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #3A3B41;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+.kontak .container .row .isian input {
   border: 2px solid #58C6EF;
-  border-radius: 24px;
 }
-.artikel .container .row .col .carda {
-  padding: 15px;
+.kontak .container .row .isian textarea {
+  border: 2px solid #58C6EF;
 }
-.artikel .container .row .col .carda img {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 24px;
-}
-.artikel .container .row .col .carda img:hover {
-  transform: scale(1.1);
-  transition: all ease-in-out 0.3s;
-}
-.artikel .container .row .col .carda .card-body h4, .artikel .container .row .col .carda .card-body .h4 {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+
+.d-grid .btn {
   margin-top: 30px;
-  color: #58C6EF;
-}
-.artikel .container .row .col .carda .card-body h5, .artikel .container .row .col .carda .card-body .h5 {
-  font-family: "Poppins";
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 600;
-  color: #19245F;
-  margin-top: 20px;
-}
-.artikel .container .row .col .carda .card-body h5:hover, .artikel .container .row .col .carda .card-body .h5:hover {
-  color: #3871D0;
-  cursor: pointer;
-}
-.artikel .container .row .col .carda .card-body p {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #3A3B41;
-  margin-top: 10px;
-}
-.artikel .container .row .col .carda .card-body h6 a, .artikel .container .row .col .carda .card-body .h6 a {
-  font-family: "Poppins";
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-  color: #3871D0;
-  text-decoration: none;
-}
-.artikel .container .row .col .carda .card-body h6 a:hover, .artikel .container .row .col .carda .card-body .h6 a:hover {
-  color: #19245F;
-}
-
-.galeri {
-  padding: 100px 0;
-  width: 100%;
-  height: 650px;
-  background-repeat: no-repeat;
-  background-image: url(../images/bnd-galbg.png);
-  background-position: left top;
-  background-size: 40%;
-}
-.galeri .container {
-  padding: 20px 0;
-}
-.galeri .container h1, .galeri .container .h1 {
-  font-family: "Poppins";
-  font-size: 56px;
-  line-height: 72px;
-  font-weight: 700;
-  color: #19245F;
-}
-.galeri .container .row h2, .galeri .container .row .h2 {
-  font-family: "Poppins";
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  color: #19245F;
-}
-.galeri .container .row .btn-galeri {
-  background-color: #619AEF;
   color: #ffffff;
-  border-radius: 10px;
-}
-.galeri .container .content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 20px;
-}
-.galeri .container .content .card-box {
-  width: 20rem;
-  margin: 20px 30px;
-}
-.galeri .container .content .card-box img {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 24px;
-}
-.galeri .container .content .card-box img:hover {
-  transform: scale(1.1);
-  transition: all ease-in-out 0.3s;
+  border-radius: 20px;
+  background: #619AEF;
 }
 
-.daftar .container .cardd {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 24px;
-  padding: 20px;
-  background: linear-gradient(180deg, #3871D0 -10.93%, #58C6EF 114.31%);
-  background-repeat: no-repeat;
-  margin: 100px 0;
-  width: 100%;
-  height: 350px;
-}
-.daftar .container .cardd .daftar-caption {
-  padding: 30px;
-}
-.daftar .container .cardd .daftar-caption h2, .daftar .container .cardd .daftar-caption .h2 {
-  font-family: "Poppins";
-  font-size: 48px;
-  line-height: 72px;
-  font-weight: 700;
-  color: #ffffff;
-}
-.daftar .container .cardd .daftar-caption p {
-  font-family: "Poppins";
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #ffffff;
-  padding: 10px 0;
-}
-.daftar .container .cardd .daftar-caption a {
-  background-color: #ffffff;
-  color: #3871D0;
-}
-
-.skeleton {
-  -webkit-animation: skeleton-loading 1s linear infinite alternate;
-          animation: skeleton-loading 1s linear infinite alternate;
-}
-
-@-webkit-keyframes skeleton-loading {
-  0% {
-    background-color: hsl(200deg, 20%, 70%);
-  }
-  100% {
-    background-color: hsl(200deg, 20%, 95%);
-  }
-}
-
-@keyframes skeleton-loading {
-  0% {
-    background-color: hsl(200deg, 20%, 70%);
-  }
-  100% {
-    background-color: hsl(200deg, 20%, 95%);
-  }
-}
 .footer1 {
   display: flex;
   flex-direction: row;
@@ -11411,4 +11232,4 @@ body {
   justify-content: center;
   text-align: center;
   color: #404040;
-}/*# sourceMappingURL=beranda.css.map */
+}/*# sourceMappingURL=kontak.css.map */

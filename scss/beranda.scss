@@ -40,7 +40,9 @@ body{
         }
         .navbar-collapse{
             .navbar-nav{
-                @include m.flex(row, center);
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 .nav-item{
                     padding: 0 20px;
                     a{
