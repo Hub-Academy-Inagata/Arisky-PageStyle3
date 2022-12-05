@@ -10971,6 +10971,16 @@ body {
 .navbar .container .navbar-collapse .navbar-nav .nav-item a:hover {
   color: #30396E;
 }
+@media screen and (max-width: 767px) {
+  .navbar .container .navbar-collapse {
+    background: #54BAEB;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .container .navbar-collapse {
+    background: #54BAEB;
+  }
+}
 
 .nav-link:hover {
   border-bottom: 2px solid #30396E;
@@ -11048,7 +11058,7 @@ body {
   background-image: url(../images/bnd-ban1.png), url(../images/ban-bnd2.png);
   background-repeat: no-repeat;
   background-position: top left, top right;
-  background-size: auto, 40%;
+  background-size: 10%, 40%;
 }
 .banner .container {
   display: flex;
@@ -11063,6 +11073,22 @@ body {
   font-weight: 700;
   color: #19245F;
 }
+@media only screen and (max-width: 767px) {
+  .banner .container .banner-caption h2, .banner .container .banner-caption .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner .container .banner-caption h2, .banner .container .banner-caption .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
 .banner .container .banner-caption p {
   font-family: "Poppins";
   font-size: 16px;
@@ -11075,6 +11101,22 @@ body {
   border-radius: 10px;
   color: #ffffff;
 }
+@media only screen and (max-width: 767px) {
+  .banner .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner {
+    height: 1000px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    height: 650px;
+  }
+}
 
 .keunggulan {
   padding: 100px 30px 100px 30px;
@@ -11083,70 +11125,150 @@ body {
   background-size: 100%;
   height: 1172px;
 }
-.keunggulan .container .judul h2, .keunggulan .container .judul .h2 {
+.keunggulan .unggul .judul h2, .keunggulan .unggul .judul .h2 {
   font-family: "Poppins";
   font-size: 56px;
   line-height: 72px;
   font-weight: 700;
-  color: #19245F;
+  color: #ffffff;
 }
-.keunggulan .container .isi {
+@media only screen and (max-width: 767px) {
+  .keunggulan .unggul .judul h2, .keunggulan .unggul .judul .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    padding-top: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .keunggulan .unggul .judul h2, .keunggulan .unggul .judul .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+.keunggulan .unggul .isi {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
   margin: 50px 0;
 }
-.keunggulan .container .isi .card .card-body {
+.keunggulan .unggul .isi .col .card .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.keunggulan .container .isi .card img {
+.keunggulan .unggul .isi .col .card img {
   width: 80px;
   margin-bottom: 20px;
 }
-.keunggulan .container .isi .card .card-title {
+.keunggulan .unggul .isi .col .card .card-title {
   font-family: "Poppins";
   font-size: 20px;
   line-height: 36px;
   font-weight: 600;
   color: #1C2661;
 }
-.keunggulan .container .isi .card .card-text {
+.keunggulan .unggul .isi .col .card .card-text {
   color: #3A3B41;
   padding-right: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .keunggulan .unggul .isi .col {
+    padding: 20px 0;
+  }
 }
 .keunggulan .tentang {
   padding: 50px 0;
 }
-.keunggulan .tentang .container {
+.keunggulan .tentang .tang {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
-.keunggulan .tentang .container .tentang-img img {
+.keunggulan .tentang .tang .tentang-img img {
   width: 70%;
 }
-.keunggulan .tentang .container .tentang-caption {
+.keunggulan .tentang .tang .tentang-caption {
   margin-left: 50px;
 }
-.keunggulan .tentang .container .tentang-caption h2, .keunggulan .tentang .container .tentang-caption .h2 {
+.keunggulan .tentang .tang .tentang-caption h2, .keunggulan .tentang .tang .tentang-caption .h2 {
   font-family: "Poppins";
   font-size: 56px;
   line-height: 72px;
   font-weight: 700;
   color: #ffffff;
 }
-.keunggulan .tentang .container .tentang-caption p {
+@media only screen and (max-width: 767px) {
+  .keunggulan .tentang .tang .tentang-caption h2, .keunggulan .tentang .tang .tentang-caption .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .keunggulan .tentang .tang .tentang-caption h2, .keunggulan .tentang .tang .tentang-caption .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+.keunggulan .tentang .tang .tentang-caption p {
   font-family: "Poppins";
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   text-align: justify;
   color: #ffffff;
+}
+@media only screen and (max-width: 767px) {
+  .keunggulan .tentang .tang .tentang-caption {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .keunggulan .tentang .tang .tentang-caption {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .keunggulan .tentang .tang {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .keunggulan .tentang {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .keunggulan {
+    background-size: 850%;
+    height: 500%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .keunggulan {
+    background-size: 165%;
+    height: 200%;
+  }
+}
+@media only screen and (min-width: 1023px) and (max-width: 1439px) {
+  .keunggulan {
+    background-size: 125%;
+    height: 200%;
+  }
 }
 
 .artikel {
@@ -11164,6 +11286,22 @@ body {
   line-height: 72px;
   font-weight: 700;
   color: #19245F;
+}
+@media only screen and (max-width: 767px) {
+  .artikel .container .artikel-caption h2, .artikel .container .artikel-caption .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .artikel .container .artikel-caption h2, .artikel .container .artikel-caption .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
 }
 .artikel .container .artikel-caption p {
   font-family: "Poppins";
@@ -11231,6 +11369,16 @@ body {
 .artikel .container .row .col .carda .card-body h6 a:hover, .artikel .container .row .col .carda .card-body .h6 a:hover {
   color: #19245F;
 }
+@media only screen and (max-width: 767px) {
+  .artikel .container .row .col {
+    width: 18rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .artikel .container .row .col {
+    width: 13rem;
+  }
+}
 
 .galeri {
   padding: 100px 0;
@@ -11251,6 +11399,22 @@ body {
   font-weight: 700;
   color: #19245F;
 }
+@media only screen and (max-width: 767px) {
+  .galeri .container h1, .galeri .container .h1 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .galeri .container h1, .galeri .container .h1 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
 .galeri .container .row h2, .galeri .container .row .h2 {
   font-family: "Poppins";
   font-size: 20px;
@@ -11267,6 +11431,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 .galeri .container .content .card-box {
@@ -11280,6 +11445,23 @@ body {
 .galeri .container .content .card-box img:hover {
   transform: scale(1.1);
   transition: all ease-in-out 0.3s;
+}
+@media only screen and (max-width: 767px) {
+  .galeri .container .content .card-box {
+    width: 16rem;
+    margin: 10px 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .galeri .container .content {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .galeri {
+    height: auto;
+    padding: 20px;
+  }
 }
 
 .daftar .container .cardd {
@@ -11305,6 +11487,22 @@ body {
   font-weight: 700;
   color: #ffffff;
 }
+@media only screen and (max-width: 767px) {
+  .daftar .container .cardd .daftar-caption h2, .daftar .container .cardd .daftar-caption .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .daftar .container .cardd .daftar-caption h2, .daftar .container .cardd .daftar-caption .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
 .daftar .container .cardd .daftar-caption p {
   font-family: "Poppins";
   font-size: 18px;
@@ -11313,9 +11511,28 @@ body {
   color: #ffffff;
   padding: 10px 0;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .daftar .container .cardd .daftar-caption p {
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
 .daftar .container .cardd .daftar-caption a {
   background-color: #ffffff;
   color: #3871D0;
+}
+@media only screen and (max-width: 767px) {
+  .daftar .container .cardd {
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .daftar .container .cardd {
+    height: 450px;
+  }
 }
 
 .skeleton {
