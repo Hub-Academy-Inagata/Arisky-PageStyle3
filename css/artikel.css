@@ -10971,6 +10971,28 @@ body {
 .navbar .container .navbar-collapse .navbar-nav .nav-item a:hover {
   color: #30396E;
 }
+@media screen and (max-width: 767px) {
+  .navbar .container .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .container .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container .navbar-collapse {
+    background: #54BAEB;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .container .navbar-collapse {
+    background: #54BAEB;
+  }
+}
 
 .nav-link:hover {
   border-bottom: 2px solid #30396E;
@@ -11064,6 +11086,31 @@ body {
   font-weight: 700;
   color: #19245F;
 }
+@media only screen and (max-width: 767px) {
+  .banner .container h2, .banner .container .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner .container h2, .banner .container .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #19245F;
+  }
+}
+.banner .container img {
+  width: 60%;
+}
+@media only screen and (max-width: 767px) {
+  .banner .container img {
+    width: 100%;
+  }
+}
 
 .gotong {
   margin: 150px 0 50px 0;
@@ -11102,6 +11149,14 @@ body {
   font-weight: 700;
   color: #19245F;
 }
+@media only screen and (max-width: 767px) {
+  .gotong .container .gotong-caption h2, .gotong .container .gotong-caption .h2 {
+    font-family: "Poppins";
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+}
 .gotong .container .gotong-caption h2:hover, .gotong .container .gotong-caption .h2:hover {
   color: #3871D0;
   cursor: pointer;
@@ -11132,7 +11187,27 @@ body {
   color: #19245F;
   cursor: pointer;
 }
+@media only screen and (max-width: 767px) {
+  .gotong .container .gotong-caption {
+    margin-left: 0;
+    margin-top: 20px;
+    align-items: center;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .gotong .container {
+    flex-direction: column;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  .col-5 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+}
 .artikel .container .row {
   margin-top: 20px;
 }
@@ -11191,6 +11266,16 @@ body {
 }
 .artikel .container .row .col .carda .card-body h6 a:hover, .artikel .container .row .col .carda .card-body .h6 a:hover {
   color: #19245F;
+}
+@media only screen and (max-width: 767px) {
+  .artikel .container .row .col {
+    width: 17rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .artikel .container .row .col {
+    width: 12rem;
+  }
 }
 
 .skeleton {

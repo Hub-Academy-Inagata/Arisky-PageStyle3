@@ -50,6 +50,25 @@ body{
                         color: $nav;
                     }
                 }
+                //media query
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                //media query
+                @media only screen and (min-width: 768px) and (max-width: 991px){
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            //media query
+            @media screen and (max-width: 767px) {
+                background: $w-dua;
+            }
+
+            //media query
+            @media only screen and (min-width: 768px) and (max-width: 991px){
+                background: $w-dua;
             }
         }
     }
@@ -147,6 +166,18 @@ body{
     .container{
         @include m.flex(row, center);
         padding-top: 100px;
+        img{
+            width: 80%;
+            
+            @media only screen and (max-width: 767px){
+                width: 100%;
+            }
+        }
+    }
+
+    //media query
+    @media only screen and (max-width: 767px){
+        height: 500px;
     }
 }
 
@@ -160,6 +191,16 @@ body{
             h2{
                 @include m.font-style(56px, 72px, 700);
                 color: $text-h2;
+
+                //media query
+                @media only screen and (max-width: 767px){
+                    @include m.font-style(36px, 40px, 700);
+                }
+
+                //media query
+                @media only screen and (min-width: 768px) and (max-width: 991px){
+                    @include m.font-style(40px, 40px, 700);
+                }
             }
             p{
                 @include m.font-style(20px, 20px, 400);
@@ -199,28 +240,45 @@ body{
         .judul h2{
             @include m.font-style(56px, 72px, 700);
             color: $text-h2;
+
+            //media query
+            @media only screen and (max-width: 767px){
+                @include m.font-style(36px, 40px, 700);
+                padding-top: 50px;
+            }
+
+            //media query
+            @media only screen and (min-width: 768px) and (max-width: 991px){
+                @include m.font-style(40px, 40px, 700);
+            }
         }
         .isi{
             @include m.flex(row, center);
             align-content: center;
             margin: 50px 0;
-            .card{
-                .card-body{
-                    @include m.flex(column, center);
-                    align-items: center;
-                    text-align: center;
+            .col{
+                .card{
+                    .card-body{
+                        @include m.flex(column, center);
+                        align-items: center;
+                        text-align: center;
+                    }
+                    img{
+                        width: 80px;
+                        margin-bottom: 20px;
+                    }
+                    .card-title{
+                        @include m.font-style(20px, 36px, 600);
+                        color: $text-u;
+                    }
+                    .card-text{
+                        color: #3A3B41;
+                        padding-right: 10px;
+                    }
                 }
-                img{
-                    width: 80px;
-                    margin-bottom: 20px;
-                }
-                .card-title{
-                    @include m.font-style(20px, 36px, 600);
-                    color: $text-u;
-                }
-                .card-text{
-                    color: #3A3B41;
-                    padding-right: 10px;
+                //media query
+                @media only screen and (max-width: 767px){
+                    padding: 20px 0;
                 }
             }
         }
@@ -239,14 +297,50 @@ body{
                 h2{
                     @include m.font-style(56px, 72px, 700);
                     color: $putih;
+
+                    //media query
+                    @media only screen and (max-width: 767px){
+                        @include m.font-style(36px, 40px, 700);
+                    }
+
+                    //media query
+                    @media only screen and (min-width: 768px) and (max-width: 991px){
+                        @include m.font-style(40px, 40px, 700);
+                        color: $text-h2;
+                    }
                 }
                 p{
                     @include m.font-style(16px, 24px, 400);
                     text-align: justify;
                     color: $putih;
+
+                    //media query
+                    @media only screen and (min-width: 768px) and (max-width: 991px){
+                        color: $text-p;
+                    }
+                }
+
+                //media query
+                @media only screen and (max-width: 767px){
+                    margin-left: 0;
                 }
             }
+            //media query
+            @media only screen and (max-width: 767px){
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
         }
+        //media query
+        @media only screen and (min-width: 768px) and (max-width: 991px){
+            padding: 20px;
+        }
+    }
+    //media query
+    @media only screen and (max-width: 767px){
+        background-size: 950%;
+        height: 700%;
     }
 }
 
@@ -257,12 +351,27 @@ body{
         h2{
             @include m.font-style(56px, 72px, 700);
             color: $text-h2;
+                
+            //media query
+            @media only screen and (max-width: 767px){
+                @include m.font-style(36px, 40px, 700);
+            }
+
+            //media query
+            @media only screen and (min-width: 768px) and (max-width: 991px){
+                @include m.font-style(40px, 40px, 700);
+            }
         }
         padding: 20px 0;
         .row{
             h5{
                 @include m.font-style(24px, 36px, 500);
                 color: $text-h2;
+            
+                //media query
+                @media only screen and (max-width: 767px){
+                    @include m.font-style(20px, 20px, 500);
+                }
             }
             a{
                 background-color: $button;
@@ -304,7 +413,25 @@ body{
                         }
                     }
                 }
+                //media query
+                @media only screen and (max-width: 767px){
+                    width: 14rem;
+                }
+
+                //media query
+                @media only screen and (min-width: 768px) and (max-width: 991px){
+                    width: 10rem;
+                }
             }
+            //media query
+            @media only screen and (max-width: 767px){
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        //media query
+        @media only screen and (max-width: 767px){
+            padding: 15px;
         }
     }
 }
@@ -327,16 +454,41 @@ body{
                 h2{
                     @include m.font-style(48px, 72px, 700);
                     color: $putih;
+            
+                    //media query
+                    @media only screen and (max-width: 767px){
+                        @include m.font-style(36px, 40px, 700);
+                    }
+        
+                    //media query
+                    @media only screen and (min-width: 768px) and (max-width: 991px){
+                        @include m.font-style(40px, 40px, 700);
+                    }
                 }
                 p{
                     @include m.font-style(18px, 24px, 400);
                     color: $putih;
                     padding: 10px 0;
+
+                    //media query
+                    @media only screen and (min-width: 768px) and (max-width: 991px){
+                        @include m.font-style(16px, 20px, 400);
+                    }
                 }
                 a{
                     background-color: $putih;
                     color: $w-satu;
                 }
+            }
+            //media query
+            @media only screen and (max-width: 767px){
+                flex-direction: column;
+                height: auto;
+            }
+
+            //media query
+            @media only screen and (min-width: 768px) and (max-width: 991px){
+                height: 450px;
             }
         }
     }

@@ -50,6 +50,24 @@ body{
                         color: $nav;
                     }
                 }
+                //media query
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                //media query
+                @media only screen and (min-width: 768px) and (max-width: 991px){
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            //media query
+            @media screen and (max-width: 767px) {
+                background: $w-dua;
+            }
+            //media query
+            @media only screen and (min-width: 768px) and (max-width: 991px){
+                background: $w-dua;
             }
         }
     }
@@ -151,6 +169,25 @@ body{
         h2{
             @include m.font-style(56px, 72px, 700);
             color: $text-h2;
+
+            //media query
+            @media only screen and (max-width: 767px){
+                @include m.font-style(36px, 40px, 700);
+            }
+
+            //media query
+            @media only screen and (min-width: 768px) and (max-width: 991px){
+                @include m.font-style(40px, 40px, 700);
+                color: $text-h2;
+            }
+        }
+        img{
+            width: 60%;
+
+            //media query
+            @media only screen and (max-width: 767px){
+                width: 100%;
+            }
         }
     }
 }
@@ -161,12 +198,28 @@ body{
         h2{
             @include m.font-style(56px, 72px, 700);
             color: $text-h2;
-            text-align: center
+            text-align: center;
+
+            //media query
+            @media only screen and (max-width: 767px){
+                @include m.font-style(36px, 40px, 700);
+            }
+
+            //media query
+            @media only screen and (min-width: 768px) and (max-width: 991px){
+                @include m.font-style(40px, 40px, 700);
+                color: $text-h2;
+            }
         }
         h5{
             @include m.font-style(24px, 30px, 500);
             color: $text-h2;
             text-align: center;
+
+            //media query
+            @media only screen and (max-width: 767px){
+                @include m.font-style(20px, 20px, 500);
+            }
         }
         .row{
             padding-top: 30px;
@@ -236,6 +289,12 @@ body{
                 textarea{
                     border: 2px solid $border;
                 }
+            }
+
+            //media query
+            @media only screen and (max-width: 767px){
+                flex-direction: column;
+                flex-wrap: nowrap;
             }
         }
     }

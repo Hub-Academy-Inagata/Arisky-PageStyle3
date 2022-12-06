@@ -10971,6 +10971,28 @@ body {
 .navbar .container .navbar-collapse .navbar-nav .nav-item a:hover {
   color: #30396E;
 }
+@media screen and (max-width: 767px) {
+  .navbar .container .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .container .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container .navbar-collapse {
+    background: #54BAEB;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .container .navbar-collapse {
+    background: #54BAEB;
+  }
+}
 
 .nav-link:hover {
   border-bottom: 2px solid #30396E;
@@ -11064,6 +11086,31 @@ body {
   font-weight: 700;
   color: #19245F;
 }
+@media only screen and (max-width: 767px) {
+  .banner .container h2, .banner .container .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner .container h2, .banner .container .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #19245F;
+  }
+}
+.banner .container img {
+  width: 80%;
+}
+@media only screen and (max-width: 767px) {
+  .banner .container img {
+    width: 100%;
+  }
+}
 
 .galeri .container {
   margin-top: 60px;
@@ -11075,6 +11122,23 @@ body {
   font-weight: 700;
   color: #19245F;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .galeri .container h2, .galeri .container .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .galeri .container h2, .galeri .container .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #19245F;
+  }
 }
 .galeri .container .row {
   padding-top: 30px;
@@ -11127,6 +11191,21 @@ body {
   font-weight: 400;
   align-items: center;
   margin-top: 250px;
+}
+@media only screen and (max-width: 767px) {
+  .galeri .container .row .col .card .info h5, .galeri .container .row .col .card .info .h5 {
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-top: 150px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .galeri .container .row .col .card {
+    width: 200px;
+    height: 200px;
+  }
 }
 .galeri .container .row .col .card::before {
   content: "";

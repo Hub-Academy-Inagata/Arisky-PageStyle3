@@ -40,9 +40,7 @@ body{
         }
         .navbar-collapse{
             .navbar-nav{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include m.flex(row, center);
                 .nav-item{
                     padding: 0 20px;
                     a{
@@ -51,6 +49,16 @@ body{
                     a:hover{
                         color: $nav;
                     }
+                }
+                //media query
+                @media screen and (max-width: 767px) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                //media query
+                @media only screen and (min-width: 768px) and (max-width: 991px){
+                    flex-direction: column;
+                    align-items: center;
                 }
             }
             //media query
@@ -279,12 +287,18 @@ body{
                     //media query
                     @media only screen and (min-width: 768px) and (max-width: 991px){
                         @include m.font-style(40px, 40px, 700);
+                        color: $text-h2;
                     }
                 }
                 p{
                     @include m.font-style(16px, 24px, 400);
                     text-align: justify;
                     color: $putih;
+
+                    //media query
+                    @media only screen and (min-width: 768px) and (max-width: 991px){
+                        color: $text-p;
+                    }
                 }
 
                 //media query
@@ -311,18 +325,6 @@ body{
     @media only screen and (max-width: 767px){
         background-size: 850%;
         height: 500%;
-    }
-    
-    //media query
-    @media only screen and (min-width: 768px) and (max-width: 991px){
-        background-size: 165%;
-        height: 200%;
-    }
-    
-    //media query
-    @media only screen and (min-width: 1023px) and (max-width: 1439px){
-        background-size: 125%;
-        height: 200%;
     }
 }
 

@@ -10971,6 +10971,28 @@ body {
 .navbar .container .navbar-collapse .navbar-nav .nav-item a:hover {
   color: #30396E;
 }
+@media screen and (max-width: 767px) {
+  .navbar .container .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .container .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .container .navbar-collapse {
+    background: #54BAEB;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .container .navbar-collapse {
+    background: #54BAEB;
+  }
+}
 
 .nav-link:hover {
   border-bottom: 2px solid #30396E;
@@ -11056,6 +11078,19 @@ body {
   justify-content: center;
   padding-top: 100px;
 }
+.banner .container img {
+  width: 80%;
+}
+@media only screen and (max-width: 767px) {
+  .banner .container img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner {
+    height: 500px;
+  }
+}
 
 .video {
   padding: 100px 0;
@@ -11070,6 +11105,22 @@ body {
   line-height: 72px;
   font-weight: 700;
   color: #19245F;
+}
+@media only screen and (max-width: 767px) {
+  .video .container .judul h2, .video .container .judul .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video .container .judul h2, .video .container .judul .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
 }
 .video .container .judul p {
   font-family: "Poppins";
@@ -11114,6 +11165,23 @@ body {
   font-weight: 700;
   color: #19245F;
 }
+@media only screen and (max-width: 767px) {
+  .keunggulan .container .judul h2, .keunggulan .container .judul .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    padding-top: 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .keunggulan .container .judul h2, .keunggulan .container .judul .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
 .keunggulan .container .isi {
   display: flex;
   flex-direction: row;
@@ -11121,27 +11189,32 @@ body {
   align-content: center;
   margin: 50px 0;
 }
-.keunggulan .container .isi .card .card-body {
+.keunggulan .container .isi .col .card .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.keunggulan .container .isi .card img {
+.keunggulan .container .isi .col .card img {
   width: 80px;
   margin-bottom: 20px;
 }
-.keunggulan .container .isi .card .card-title {
+.keunggulan .container .isi .col .card .card-title {
   font-family: "Poppins";
   font-size: 20px;
   line-height: 36px;
   font-weight: 600;
   color: #1C2661;
 }
-.keunggulan .container .isi .card .card-text {
+.keunggulan .container .isi .col .card .card-text {
   color: #3A3B41;
   padding-right: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .keunggulan .container .isi .col {
+    padding: 20px 0;
+  }
 }
 .keunggulan .profil {
   padding: 50px 0;
@@ -11164,6 +11237,23 @@ body {
   font-weight: 700;
   color: #ffffff;
 }
+@media only screen and (max-width: 767px) {
+  .keunggulan .profil .container .profil-caption h2, .keunggulan .profil .container .profil-caption .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .keunggulan .profil .container .profil-caption h2, .keunggulan .profil .container .profil-caption .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #19245F;
+  }
+}
 .keunggulan .profil .container .profil-caption p {
   font-family: "Poppins";
   font-size: 16px;
@@ -11171,6 +11261,34 @@ body {
   font-weight: 400;
   text-align: justify;
   color: #ffffff;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .keunggulan .profil .container .profil-caption p {
+    color: #3A3B41;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .keunggulan .profil .container .profil-caption {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .keunggulan .profil .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .keunggulan .profil {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .keunggulan {
+    background-size: 950%;
+    height: 700%;
+  }
 }
 
 .guru {
@@ -11186,12 +11304,36 @@ body {
   font-weight: 700;
   color: #19245F;
 }
+@media only screen and (max-width: 767px) {
+  .guru .container h2, .guru .container .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .guru .container h2, .guru .container .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
 .guru .container .row h5, .guru .container .row .h5 {
   font-family: "Poppins";
   font-size: 24px;
   line-height: 36px;
   font-weight: 500;
   color: #19245F;
+}
+@media only screen and (max-width: 767px) {
+  .guru .container .row h5, .guru .container .row .h5 {
+    font-family: "Poppins";
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+  }
 }
 .guru .container .row a {
   background-color: #619AEF;
@@ -11242,6 +11384,27 @@ body {
   font-weight: 400;
   color: #2E334E;
 }
+@media only screen and (max-width: 767px) {
+  .guru .container .content .col {
+    width: 14rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .guru .container .content .col {
+    width: 10rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .guru .container .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .guru .container {
+    padding: 15px;
+  }
+}
 
 .daftar .container .cardd {
   display: flex;
@@ -11266,6 +11429,22 @@ body {
   font-weight: 700;
   color: #ffffff;
 }
+@media only screen and (max-width: 767px) {
+  .daftar .container .cardd .daftar-caption h2, .daftar .container .cardd .daftar-caption .h2 {
+    font-family: "Poppins";
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .daftar .container .cardd .daftar-caption h2, .daftar .container .cardd .daftar-caption .h2 {
+    font-family: "Poppins";
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
 .daftar .container .cardd .daftar-caption p {
   font-family: "Poppins";
   font-size: 18px;
@@ -11274,9 +11453,28 @@ body {
   color: #ffffff;
   padding: 10px 0;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .daftar .container .cardd .daftar-caption p {
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
 .daftar .container .cardd .daftar-caption a {
   background-color: #ffffff;
   color: #3871D0;
+}
+@media only screen and (max-width: 767px) {
+  .daftar .container .cardd {
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .daftar .container .cardd {
+    height: 450px;
+  }
 }
 
 .skeleton {
