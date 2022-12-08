@@ -1,5 +1,5 @@
-@use 'modules/mixin' as m;
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@use './modules/mixin' as m;
+@import './../node_modules/bootstrap/scss/bootstrap.scss';
 
 $nav: #30396E;
 $putih: #ffffff;
