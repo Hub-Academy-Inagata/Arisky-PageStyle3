@@ -333,6 +333,10 @@ body{
                     width: 12rem;
                 }
             }
+            //media query
+            @media only screen and (max-width: 767px){
+                justify-content: center;
+            }
         }
     }
 }

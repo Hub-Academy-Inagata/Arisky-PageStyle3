@@ -11385,6 +11385,11 @@ body {
     width: 13rem;
   }
 }
+@media only screen and (max-width: 767px) {
+  .artikel .container .row {
+    justify-content: center;
+  }
+}
 
 .galeri {
   padding: 100px 0;
